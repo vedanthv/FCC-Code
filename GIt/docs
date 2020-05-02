@@ -1,2 +1,17 @@
 git config --global user.name vedanthv
 git config --global user.email vedanthvbaliga@gmail.com
+
+To https://github.com/vedanthv/FCC-Code.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/vedanthv/FCC-Code.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+If the above error: run
+git fetch origin master:tmp
+git rebase tmp
+git push origin HEAD:master
+git branch -D tmp
