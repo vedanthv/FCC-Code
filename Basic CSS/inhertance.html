@@ -12,12 +12,20 @@ However, the order of the class declarations in the <style> section is what is i
     .pink-text {
         color: pink;
     }
-    .blue-text{
-        color:blue;
+
+    .blue-text {
+        color: blue;
     }
 
+    #orange-text {
+        /*specificity of id is always greater than class*/
+        color: orange;
+    }
+
+    /*the classes have the same specificity 
+the parsing is always downwards*/
 </style>
 
 <body>
-    <h1 class="pink-text blue-text">Hello World</h1>
+    <h1 style=color:white; class="pink-text blue-text" id="orange-text">Hello World</h1>
 </body>
