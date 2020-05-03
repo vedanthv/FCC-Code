@@ -1,0 +1,16 @@
+<style>
+    :root {
+        --red-color: red;
+        /*all the child element sget the red color*/
+        /*root is the pseudo class selector*/
+    }
+
+    .red-box {
+        background: red;
+        /*IE does not support variables*/
+        background: var(--red-color);
+        height: 200px;
+        width: 200px;
+    }
+</style>
+<div class="red-box"></div>

@@ -1,6 +1,11 @@
 <style>
+    :root {
+        --penguin-body: pink;
+    }
+
     .penguin {
         --penguin-skin: gray;
+        --penguin-belly: white;
         position: relative;
         margin: auto;
         display: block;
@@ -13,9 +18,8 @@
         top: 10%;
         left: 25%;
 
-        /* Change code below this line */
-        background: var(--penguin-skin);
-        /* Change code above this line */
+        background: var(--penguin-skin, black);
+
 
         width: 50%;
         height: 45%;
@@ -26,9 +30,9 @@
         top: 40%;
         left: 23.5%;
 
-        /* Change code below this line */
-        background: var(--penguin-skin);
-        /* Change code above this line */
+
+        background: var(--penguin-skin, black);
+
 
         width: 53%;
         height: 45%;
@@ -39,9 +43,9 @@
         top: 0%;
         left: -5%;
 
-        /* Change code below this line */
+
         background: var(--penguin-skin);
-        /* Change code above this line */
+
 
         width: 30%;
         height: 60%;
@@ -53,11 +57,7 @@
     .left-hand {
         top: 0%;
         left: 75%;
-
-        /* Change code below this line */
         background: var(--penguin-skin);
-        /* Change code above this line */
-
         width: 30%;
         height: 60%;
         border-radius: 30% 30% 30% 120%;
