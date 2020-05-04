@@ -1,6 +1,20 @@
+How to push existing repos
+git remote add origin https://github.com/vedanthv/emmetsandbox.git
+git push -u origin master
+-------------------------------------------------------------------------
+How to push for the first time
+
+echo "# emmetsandbox" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/vedanthv/emmetsandbox.git
+git push -u origin master
+
 git config --global user.name vedanthv
 git config --global user.email vedanthvbaliga@gmail.com
-
+--------------------------------------------------------------------------------------
+Error:
 To https://github.com/vedanthv/FCC-Code.git
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'https://github.com/vedanthv/FCC-Code.git'
@@ -10,8 +24,9 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-If the above error: run
+If the above error: run one by one
 git fetch origin master:tmp
 git rebase tmp
 git push origin HEAD:master
 git branch -D tmp
+------------------------------
