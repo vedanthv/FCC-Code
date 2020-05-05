@@ -1,4 +1,24 @@
 <!-- on the cross axis we will work with the cross axis(the axis opposite to the main-axis) -->
+<style>
+    #box-container {
+        background: gray;
+        display: flex;
+        height: 500px;
+        align-items: center;
+    }
+
+    #box-1 {
+        background-color: dodgerblue;
+        width: 200px;
+        font-size: 24px;
+    }
+
+    #box-2 {
+        background-color: orangered;
+        width: 200px;
+        font-size: 18px;
+    }
+</style>
 <blockquote>flex-start: aligns items to the start of the flex container. For rows, this aligns items to the top of the
     container. For columns, this aligns items to the left of the container.
     flex-end: aligns items to the end of the flex container. For rows, this aligns items to the bottom of the container.
@@ -9,3 +29,13 @@
     container top-to-bottom. This is the default value if no align-items value is specified.
     baseline: align items to their baselines. Baseline is a text concept, think of it as the line that the letters sit
     on.</blockquote>
+
+
+<div id="box-container">
+    <div id="box-1">
+        <p>Hello</p>
+    </div>
+    <div id="box-2">
+        <p>Goodbye</p>
+    </div>
+</div>
