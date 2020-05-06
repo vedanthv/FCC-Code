@@ -1,0 +1,77 @@
+<style>
+    .item1 {
+        background: LightSkyBlue;
+        grid-area: header;
+    }
+
+    .item2 {
+        background: LightSalmon;
+        grid-area: advert;
+    }
+
+    .item3 {
+        background: PaleTurquoise;
+        grid-area: content;
+    }
+
+    .item4 {
+        background: lightpink;
+        grid-area: footer;
+    }
+
+    .container {
+        font-size: 1.5em;
+        min-height: 300px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 1fr auto;
+        grid-gap: 10px;
+        grid-template-areas:
+            "header"
+            "advert"
+            "content"
+            "footer";
+    }
+
+    @media (min-width: 400px) {
+        .container {
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "header header"
+                "advert content"
+                "footer footer";
+            /* when the width is 400px or less the header occupies the entire first row and the footer occupies the entire last row
+                This creates a mobile frienly layout */
+        }
+    }
+
+    @media (min-width: 400px) {
+        .container {
+            grid-template-areas:
+                /* Only change code below this line */
+                "advert header"
+                "advert content"
+                "advert footer";
+            /* Only change code above this line */
+        }
+    }
+
+    blockquote {
+        line-height: 35px;
+        color: white;
+        background-color: black;
+    }
+</style>
+
+<blockquote>CSS Grid: Use Media Queries to Create Responsive Layouts<br>
+    CSS Grid can be an easy way to make your site more responsive by using media queries to rearrange grid areas, change
+    dimensions of a grid, and rearrange the placement of items.
+
+    In the preview, when the viewport width is 300px or more, the number of columns changes from 1 to 2. The
+    advertisement area then occupies the left column completely.
+
+    When the viewport width is 400px or more, make the header area occupy the top row completely and the footer area
+    occupy the bottom row completely.</blockquote>
