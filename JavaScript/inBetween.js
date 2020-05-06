@@ -1,0 +1,12 @@
+function testLogicalOr(val) {
+    // Only change code below this line
+
+    if (val <= 10 || val > 20) {
+        return "Outside";
+    }
+    return "Inside";
+    // Only change code above this line
+
+}
+
+console.log(testLogicalOr(10));
