@@ -40,4 +40,11 @@ function cc(card) {
             break;
     }
     var betOrHold;
-    // if(count <=0){ betOrHold='Hold' ; } else{ betOrHold='Bet' ; } var answer=count + ' ' +betOrHold; return answer; // Only change code above this line } cc(2); cc(3); cc(7); cc('K'); cc('A')
+    if (count <= 0) {
+        betOrHold = 'Hold';
+    } else {
+        betOrHold = 'Bet';
+    }
+    var answer = count + ' ' + betOrHold;
+    return answer; 
+}
