@@ -8,3 +8,14 @@ var myArray = [
 // Only change code below this line
 var removedFromMyArray;
 removedFromMyArray = myArray.shift();
+//it also changes the initail array
+
+// Setup
+var myArray = [
+    ["John", 23],
+    ["dog", 3]
+];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);
