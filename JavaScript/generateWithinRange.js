@@ -9,6 +9,6 @@
     //     Math.floor(Math.random() * (max - min + 1)) + min
         function randomRange(myMin, myMax) {
     
-            return Math.floor(math.random()*(max-min+1))+min;
+            return Math.floor(Math.random()*(myMax-myMin+1))+myMin;
         }
-      
+        
